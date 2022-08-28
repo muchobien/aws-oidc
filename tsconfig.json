@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node16-strictest/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "es2022",
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/infra": ["./infra"],
+      "@/infra/*": ["./infra/*"],
+      "@/*": ["./src/*"],
+    },
+  },
+  "include": ["src/**/*", "infra/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
