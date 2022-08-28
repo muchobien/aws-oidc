@@ -12,7 +12,7 @@
   "dependencies": {
     "aws-cdk-github-oidc": "2.2.1",
     "aws-cdk-lib": "2.39.0",
-    "constructs": "10.1.88",
+    "constructs": "10.1.89",
     "zod": "3.18.0"
   },
   "devDependencies": {
