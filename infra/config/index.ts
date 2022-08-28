@@ -14,7 +14,7 @@ const ConfigSchema = z.object({
 export type Config = z.infer<typeof ConfigSchema> & {
   scopedId: (id: string) => string;
   isProd: boolean;
-  lambdaEnvironment: Omit<z.infer<typeof ConfigSchema>, 'APP' | 'STAGE' | 'VERSION' | 'BUILD'>;
+  lambdaEnvironment: z.infer<typeof ConfigSchema>;
 };
 
 export const loadConfig = async (scope: Construct): Promise<Config> => {
@@ -27,7 +27,7 @@ export const loadConfig = async (scope: Construct): Promise<Config> => {
 
   const file = await import(`${__basedir}/config/stages/${stage}.ts`);
 
-  const { APP, STAGE, VERSION, BUILD, ...lambdaEnvironment } = await ConfigSchema.parseAsync(file.config);
+  const { APP, STAGE, VERSION, BUILD, ...rest } = await ConfigSchema.parseAsync(file.config);
 
   Tags.of(scope).add('app', APP);
   Tags.of(scope).add('stage', STAGE);
@@ -39,9 +39,15 @@ export const loadConfig = async (scope: Construct): Promise<Config> => {
     STAGE,
     VERSION,
     BUILD,
-    ...lambdaEnvironment,
+    ...rest,
     isProd: STAGE === 'prod',
-    lambdaEnvironment,
+    lambdaEnvironment: {
+      APP,
+      STAGE,
+      VERSION,
+      BUILD,
+      ...rest,
+    },
     scopedId: (id: string) => `${APP}-${STAGE}-${id}`.toLowerCase(),
   };
 };
