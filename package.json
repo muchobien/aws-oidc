@@ -12,12 +12,12 @@
   "dependencies": {
     "aws-cdk-github-oidc": "2.2.1",
     "aws-cdk-lib": "2.39.1",
-    "constructs": "10.1.91",
+    "constructs": "10.1.94",
     "zod": "3.18.0"
   },
   "devDependencies": {
     "@swc-node/register": "1.5.1",
-    "@swc/core": "1.2.244",
+    "@swc/core": "1.2.246",
     "@swc/jest": "0.2.22",
     "@tsconfig/node16-strictest": "1.0.3",
     "@types/aws-lambda": "8.10.102",
@@ -25,7 +25,7 @@
     "@types/node": "18.7.13",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.36.0",
-    "aws-cdk": "2.39.1",
+    "aws-cdk": "2.40.0",
     "esbuild": "0.15.5",
     "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
