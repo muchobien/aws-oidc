@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "aws-cdk-github-oidc": "2.2.1",
-    "aws-cdk-lib": "2.39.1",
-    "constructs": "10.1.91",
+    "aws-cdk-lib": "2.40.0",
+    "constructs": "10.1.94",
     "zod": "3.18.0"
   },
   "devDependencies": {
     "@swc-node/register": "1.5.1",
-    "@swc/core": "1.2.244",
+    "@swc/core": "1.2.246",
     "@swc/jest": "0.2.22",
     "@tsconfig/node16-strictest": "1.0.3",
     "@types/aws-lambda": "8.10.102",
