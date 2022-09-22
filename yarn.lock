@@ -1110,10 +1110,10 @@ aws-cdk-github-oidc@2.2.1:
   resolved "https://registry.yarnpkg.com/aws-cdk-github-oidc/-/aws-cdk-github-oidc-2.2.1.tgz#65c9c7045584e874cc85fef5c60e20ea4a11e1a6"
   integrity sha512-oYH75AX99t/z9a5kI1iNcOK9ebkOiklq2o5ooKTrRSvSl7iHMhH8gVspmrGRz+dNNco+hwYm+4MrBMbkTOIofg==
 
-aws-cdk-lib@2.39.1:
-  version "2.39.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.39.1.tgz#dff53ee86ddc926de55b78cea97d54e0db0aacc7"
-  integrity sha512-+KZBLBoCqq/TnC7LH8JMlQ+5IvKQtu7KHnVDiRmngtibLIXqLMVH4neKimNlSSIKhvSeOmqY2ZCaSp8v5szzrg==
+aws-cdk-lib@2.43.0:
+  version "2.43.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.43.0.tgz#df4340f7285be62fd9f09f7e9137368da63290df"
+  integrity sha512-r7wJXOFskOz4ksFE1oILLlQRATkhMeju4aSUafp8JcGh+mSVacXmA2h5oA2py1UbsSSJkLR8gU4CGSaGfDpjaA==
   dependencies:
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
