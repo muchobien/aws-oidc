@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "aws-cdk-github-oidc": "2.2.1",
-    "aws-cdk-lib": "2.39.1",
+    "aws-cdk-lib": "2.44.0",
     "constructs": "10.1.94",
     "zod": "3.18.0"
   },
