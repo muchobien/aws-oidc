@@ -22,7 +22,7 @@
     "@tsconfig/node16-strictest": "1.0.3",
     "@types/aws-lambda": "8.10.102",
     "@types/jest": "29.0.1",
-    "@types/node": "18.7.14",
+    "@types/node": "18.11.11",
     "@typescript-eslint/eslint-plugin": "5.40.0",
     "@typescript-eslint/parser": "5.36.1",
     "aws-cdk": "2.39.1",
